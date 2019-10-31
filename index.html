@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>prioux.github.io</title>
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/night.css">
+  <link rel="stylesheet" href="plugin/highlight/style/monokai-sublime.css">
+  <meta charset="utf-8"/>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<!-- ############################## -->
+<!-- ############################## -->
+<!-- ############################## -->
+
+<section>
+
+  <section id="title">
+    <h1>Pierre Rioux</h1>
+    I'm a computer scientist, working in life science.
+    <p>
+    My profile and projects can be browsed on <a target="_blank" href="https://github.com/prioux">github.com/prioux</a>.
+    <p>
+    That being said, hit the <em>escape</em> or <em>space</em> keys to view a few slides with
+    a short description for some of them.
+  </section>
+
+</section>
+
+<!-- ############################## -->
+<!-- ############################## -->
+<!-- ############################## -->
+
+<section>
+
+  <section id="pres_intro">
+    <h2>Presentations</h2>
+    For training other programmers:
+    <table>
+      <tr>
+         <th>Name</th>
+         <th>Type</th>
+         <th>Description</th>
+      </tr>
+      <tr>
+        <td><a target="_blank" href="https://github.com/prioux/ipc-presentation">ipc</a></td>
+        <td><a href="https://revealjs.com/#/">reveal</a></td>
+        <td>Interprocess communications</td>
+      </tr>
+      <tr>
+        <td><a target="_blank" href="https://github.com/prioux/cbrain-presentation">cbrain</a></td>
+        <td>reveal</td>
+        <td>Dev intro to <a href="https://github.com/aces/cbrain">CBRAIN</a></td>
+      </tr>
+      <tr>
+        <td><a target="_blank" href="https://github.com/prioux/cbrain-training-presentation">cbrain-training</a></td>
+        <td>reveal</td>
+        <td>Slides for a developer workshop</td>
+      </tr>
+      <tr>
+        <td><a target="_blank" href="https://github.com/prioux/regex-presentation">regex</a></td>
+        <td>reveal</td>
+        <td>Regular expressions</td>
+      </tr>
+      <tr>
+        <td><a target="_blank" href="https://github.com/prioux/rsync-presentation">rsync</a></td>
+        <td>reveal</td>
+        <td>The <em>rsync</em> utility</td>
+      </tr>
+      <tr>
+        <td><a target="_blank" href="https://github.com/prioux/git-presentation">git</a></td>
+        <td>PDF</td>
+        <td>Intro to GIT</td>
+      </tr>
+      <tr>
+        <td><a target="_blank" href="https://github.com/prioux/js-diagrams-presentation">js-diagrams</a></td>
+        <td>PDF</td>
+        <td>JavaScript intro</td>
+      </tr>
+      <tr>
+        <td><a target="_blank" href="https://github.com/prioux/filesystems-presentation">filesystems</a></td>
+        <td>PDF</td>
+        <td>Intro to filesystems</td>
+      </tr>
+    </table>
+  </section>
+
+<!-- ****************************** -->
+
+  <section id="others">
+    <h2>Other projects</h2>
+TODO
+  </section>
+
+</section>
+
+<!-- ############################## -->
+<!-- ############################## -->
+<!-- ############################## -->
+
+    </div>
+  </div>
+
+<!-- ############################## -->
+<!-- ############################## -->
+<!-- ############################## -->
+
+  <!-- Declares a filter to turn white into CBRAIN blue, #05A3D6 -->
+
+  <svg height="0">
+    <filter id="cbrainblue">
+      <feColorMatrix values="0.0196 0.0    0.0    0 0
+                             0.0    0.6392 0.0    0 0
+                             0.0    0.0    0.8392 0 0
+                             0      0      0      1 0"/>
+    </filter>
+  </svg>
+
+  <!-- Main reveal.js setup -->
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script>
+    Reveal.initialize(
+    { slideNumber: true, history: true }
+    );
+    hljs.initHighlightingOnLoad();
+  </script>
+
+  <!-- Styles -->
+
+  <style>
+
+    /* Headers */
+
+    @keyframes glowing {
+        0% { text-shadow: 0.0em 0.0em 0.0em #0cc; }
+       25% { text-shadow: 0.0em 0.0em 0.2em #0dd; }
+       50% { text-shadow: 0.0em 0.0em 0.4em #0ee; }
+       75% { text-shadow: 0.0em 0.0em 0.2em #0dd; }
+      100% { text-shadow: 0.0em 0.0em 0.0em #0cc; }
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5 {
+      color: #ffffff;
+      text-shadow: 0.0em 0.0em 0.2em #0cc;
+    }
+
+    /* Text styles: em, strong, b, i */
+
+    .reveal .glow {
+      animation: glowing 3555ms infinite;
+    }
+
+    .reveal em {
+      color: yellow;
+      font-style: normal; /* yes please! */
+    }
+    .reveal strong {
+      color: #0ff;  /* funny, I'm using RGB with only three digits today */
+    }
+    .reveal b {
+      color: #00f;
+    }
+    .reveal i {
+      color: #f00;
+      font-style: normal; /* yes please! */
+    }
+
+    /* Misc */
+
+    .reveal section .dothis {
+      color: #ccc;
+      border: 3px solid #f6f;
+      border-radius: 0.5em;
+      padding: 0.5em 0.5em 0.5em 1.5em;
+      text-align: left;
+      margin: 1em 0 0 0;
+      position: relative;
+    }
+    .reveal section .dothis legend {
+      color: #f6f;
+      border: 3px solid #f6f;
+      position: absolute;
+      font-size: 70%;
+      left: 1em;
+      top: -1em;
+      background: black;
+      border-radius: 0.3em;
+      padding: 0 0.1em 0 0.1em;
+    }
+    @keyframes blinkcursor {
+      50% { opacity: 0; }
+    }
+    .reveal .cursor {
+      color: #f90;
+      animation: blinkcursor 1s step-start infinite;
+    }
+    .reveal section img {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+    }
+    .reveal section img.cbblue {
+      filter: url(#cbrainblue);
+    }
+    .reveal pre {
+      background: #033;
+      /* padding: 0.2em 0.5em 0.3em 0.5em; */
+      padding: 0;
+      width: auto;
+    }
+    .reveal pre.compact {
+      display: inline-block;
+    }
+    .reveal pre.large {
+      font-size: 120%;
+    }
+    .reveal pre.medium {
+      font-size: 100%;
+    }
+    .reveal pre.supersmall {
+      font-size: 40%;
+    }
+    .reveal pre > code.nomaxheight {
+      max-height: none;
+    }
+    .reveal .cell {
+      display: table-cell;
+    }
+    .reveal th {
+      color: #0aa;
+    }
+    .reveal .transp {
+      background-color: transparent;
+    }
+    .reveal .resize80 { /* for pics */
+      width: 80%;
+      height: 80%;
+    }
+    .reveal .resize60 { /* for pics */
+      width: 60%;
+      height: 60%;
+    }
+    .reveal .resize40 { /* for pics */
+      width: 40%;
+      height: 40%;
+    }
+    .reveal .resize10 { /* for pics */
+      width: 10%;
+      height: 10%;
+    }
+
+    .hljs-comment {  /* I don't like the default grey */
+      color: #c9a929;
+    }
+
+  </style>
+</body>
+
+</html>
